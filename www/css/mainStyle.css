@@ -1,0 +1,188 @@
+@CHARSET "UTF-8";
+
+html, body {
+    height: calc(100%); /* 8px one ul row size, trick of current fixed footer realization*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: url(img/bg.png);
+	background-repeat: xy;
+}
+
+a, a:hover, a:visited {
+	text-decoration: none !important;
+	color: #fff;
+}
+
+.PageWrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+}
+
+* html .PageWrapper {
+    height: 100%;
+}
+
+.PageBuffer {
+    height: 50px;
+    text-align: center;
+    background-color: rgba(153, 65, 65, 1);
+    color: #fff;
+}
+
+.PageFooter {
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+	line-height:50px;
+	font-size: 20px;
+	background-color: rgba(153, 65, 65, 1);
+	color: #fff;
+}
+
+.MainMenu {
+    height: 50px;
+    padding-left: 100px;
+    text-align: center;
+    min-width: 850px;
+}
+
+.MenuItem {
+	height: 50px;
+	width: 120px;
+	float: left;
+	padding: 12px;
+	font-size: 20px;
+}
+
+.MenuItemSelected {
+	background-color: #6E0B0B;
+}
+
+.MenuItem:not(.col-md-6):hover, .PageFooter:hover {
+	background-color: #D56565;
+}
+
+.MainArea {
+	 -moz-user-select: none; 
+     -khtml-user-select: none; 
+     -webkit-user-select: none; 
+     -o-user-select: none; 
+     width:100%;
+}
+
+.col-md-6 {
+	width: 180px;
+	padding: 8px 12px 12px 12px;
+}
+
+.LeftColumn {
+  width: 50%;
+  float: left;
+}
+
+.RightColumn {
+  margin-left: calc(50%); 
+}
+
+.LeftColumn ul, .RightColumn ul { 
+	list-style-type: none;
+	min-width:425;
+}
+
+.LeftColumn h4 { 
+	margin-left: 250px;
+	color: #6F180D;
+	text-decoration: underline;
+}
+
+.LeftColumn p:hover, .RightColumn p:hover { 
+	color: #804040;
+}
+
+.RightColumn h4 { 
+	padding-top: 10px;
+	margin-left: 50px;
+	color: #6F180D;
+	text-decoration: underline;
+}
+
+.ClearColumn {
+  clear: both;
+  padding-bottom:45px;
+}
+
+.LeftColumn li, .RightColumn li {
+	padding: 10px;
+	margin: 2px;
+	text-align:justify;
+	border-bottom: 1px solid #555;
+}
+
+.LeftColumn li {
+	margin-left: 200px;
+}
+
+.RightColumn li {
+	margin-right: 200px;
+}
+
+.RightColumn li:last-child, .LeftColumn li:last-child {
+	border-bottom: none;
+}
+
+.RightColumn a, .RightColumn a:hover, .RightColumn a:visited, 
+.LeftColumn a, .LeftColumn a:hover, .LeftColumn a:visited {
+	color: #000;
+}
+
+/*Calendar bootstrap*/
+.btn-danger, .btn-success, .btn-info {
+	color: #eff;
+	background-color: #e3807d;
+	border-color: #e3807d;
+}
+
+.btn-danger:hover, .btn-success:hover, .btn-info:hover {
+	color: #eff;
+	background-color: #E75F5B;
+	border-color: #E75F5B;
+}
+
+/* Form validation new event*/
+.EventForm {
+	width:500px;
+	margin: 10px auto 10px;
+	text-align: center;
+}
+
+.EventForm .EventTable {
+	width: 100%;
+	text-align: left;
+	margin: 15px auto 15px;
+	border-spacing: 10px;
+    border-collapse: separate;
+    v-align:top;
+}
+
+/*.EventForm .EventTable textarea {
+    resize: none;
+}*/
+
+.EventForm h4 { 
+	color: #6F180D;
+	text-decoration: underline;
+}
+
+.EventForm input.ng-invalid.ng-touched {
+	background-color: #fdbbbe;
+}
+
+.EventForm input.ng-valid.ng-touched {
+	background-color: #defee2;
+}
+
+
+
